@@ -2630,6 +2630,284 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Sensor_Energy:INA226"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -6.35 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "INA226"
+				(at 3.81 11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
+				(at 20.32 -11.43 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina226.pdf"
+				(at 8.89 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "ADC I2C 16-Bit Oversampling Current Shunt"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*TSSOP*3x3mm?P0.5mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "INA226_0_1"
+				(rectangle
+					(start 7.62 10.16)
+					(end -7.62 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "INA226_1_1"
+				(pin input line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "A0"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 10.16 -7.62 180)
+					(length 2.54)
+					(name "~{Alert}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 12.7 270)
+					(length 2.54)
+					(name "VS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -12.7 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 7.62 0)
+					(length 2.54)
+					(name "Vbus"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -5.08 0)
+					(length 2.54)
+					(name "Vin-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -2.54 0)
+					(length 2.54)
+					(name "Vin+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -2904,6 +3182,18 @@
 		(uuid "55a64dbd-9df6-405c-af8e-bf26fb373b7d")
 	)
 	(junction
+		(at 107.95 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c1a0d3f-8bcc-4e0f-a9a1-851cacad6e65")
+	)
+	(junction
+		(at 77.47 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62cc9e34-412a-4178-81b7-4c44920913e6")
+	)
+	(junction
 		(at 105.41 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2950,6 +3240,10 @@
 	(no_connect
 		(at 156.21 68.58)
 		(uuid "1606a22b-c38b-4b92-9284-d19c1841e05d")
+	)
+	(no_connect
+		(at 87.63 160.02)
+		(uuid "1ebca768-1e4c-4b96-a17d-146041f4d2eb")
 	)
 	(no_connect
 		(at 212.09 62.23)
@@ -3027,6 +3321,10 @@
 		(at 212.09 44.45)
 		(uuid "f64d9209-b46b-4fc0-99fc-f175043ce9ba")
 	)
+	(no_connect
+		(at 118.11 68.58)
+		(uuid "fe16b96a-f415-4610-9e48-ff7295207d02")
+	)
 	(wire
 		(pts
 			(xy 227.33 74.93) (xy 224.79 74.93)
@@ -3086,6 +3384,16 @@
 			(type default)
 		)
 		(uuid "0cbd7ff7-5eed-4f8b-b52e-43291c443015")
+	)
+	(wire
+		(pts
+			(xy 82.55 60.96) (xy 97.79 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d29fdf0-73f0-45f5-975a-2bacbd136aea")
 	)
 	(wire
 		(pts
@@ -3149,6 +3457,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 60.96) (xy 97.79 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "372f1383-e6c3-4a48-bad8-9dec642ccbb3")
+	)
+	(wire
+		(pts
 			(xy 156.21 73.66) (xy 153.67 73.66)
 		)
 		(stroke
@@ -3166,6 +3484,16 @@
 			(type default)
 		)
 		(uuid "448741bf-7d08-4b75-a4e5-c1fcb5618cd7")
+	)
+	(wire
+		(pts
+			(xy 107.95 45.72) (xy 107.95 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44897dc8-2521-4c1d-a3c1-90309d2de072")
 	)
 	(wire
 		(pts
@@ -3209,6 +3537,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 41.91) (xy 107.95 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60a0f39a-7d32-44df-8bcf-fc494388ebab")
+	)
+	(wire
+		(pts
 			(xy 93.98 99.06) (xy 92.71 99.06)
 		)
 		(stroke
@@ -3229,6 +3567,16 @@
 	)
 	(wire
 		(pts
+			(xy 97.79 68.58) (xy 97.79 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "755ab6db-a7f2-4d39-aeba-361376f9e7c6")
+	)
+	(wire
+		(pts
 			(xy 173.99 99.06) (xy 173.99 104.14)
 		)
 		(stroke
@@ -3236,6 +3584,16 @@
 			(type default)
 		)
 		(uuid "75d2b249-5bdf-46fe-b1d9-2247a5a9b685")
+	)
+	(wire
+		(pts
+			(xy 67.31 151.13) (xy 67.31 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d5f4812-bb94-46e0-b083-5bac410ef441")
 	)
 	(wire
 		(pts
@@ -3269,6 +3627,26 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 45.72) (xy 107.95 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f8b66d3-e317-4804-b1bc-a2eae4f78839")
+	)
+	(wire
+		(pts
+			(xy 67.31 158.75) (xy 67.31 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cb2b978-cc2b-4c99-bc26-dd6b774e2340")
+	)
+	(wire
+		(pts
 			(xy 195.58 104.14) (xy 195.58 107.95)
 		)
 		(stroke
@@ -3276,6 +3654,26 @@
 			(type default)
 		)
 		(uuid "9e3496c2-3148-4920-a07b-6df6a6410b35")
+	)
+	(wire
+		(pts
+			(xy 77.47 133.35) (xy 77.47 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3e40e29-713c-4f72-b922-6b8e5a375b72")
+	)
+	(wire
+		(pts
+			(xy 74.93 137.16) (xy 77.47 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5d32591-f606-4df8-b9af-abf3d2fcd837")
 	)
 	(wire
 		(pts
@@ -3369,6 +3767,16 @@
 	)
 	(wire
 		(pts
+			(xy 53.34 151.13) (xy 67.31 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3ff257c-5cfa-479d-84fb-7aff8464c6ac")
+	)
+	(wire
+		(pts
 			(xy 171.45 99.06) (xy 173.99 99.06)
 		)
 		(stroke
@@ -3376,6 +3784,36 @@
 			(type default)
 		)
 		(uuid "ec33ff8b-5cf4-4fe9-8233-31c8545dce2d")
+	)
+	(wire
+		(pts
+			(xy 53.34 158.75) (xy 67.31 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed9bec4b-e4b8-4b75-89dd-32e21163f9b8")
+	)
+	(wire
+		(pts
+			(xy 77.47 137.16) (xy 77.47 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1dbbce2-c312-4d30-9e69-e3c594395325")
+	)
+	(wire
+		(pts
+			(xy 82.55 68.58) (xy 97.79 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f74a5d2d-bc4b-4285-9aa7-926c8919a666")
 	)
 	(wire
 		(pts
@@ -3417,6 +3855,36 @@
 		)
 		(uuid "3264de56-9b72-4e08-94e0-2cd3b1926015")
 	)
+	(label "I2C_SCL"
+		(at 118.11 63.5 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "3a367cb3-32c1-4d9e-9fa7-795b9d6fc494")
+	)
+	(label "I2C_SDA"
+		(at 118.11 60.96 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "417b5d87-71eb-4ca5-bed3-3854835c0ead")
+	)
+	(label "VOUT"
+		(at 67.31 144.78 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "4b88a09e-6a18-4121-a2fe-2c0648b68365")
+	)
 	(label "PANEL_IN"
 		(at 101.6 99.06 0)
 		(effects
@@ -3426,6 +3894,16 @@
 			(justify left bottom)
 		)
 		(uuid "52377b31-7502-47f4-b699-05c176ae85b5")
+	)
+	(label "PANEL_IN"
+		(at 97.79 63.5 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "541ded99-7d1e-43d9-b82e-ba9a8048b493")
 	)
 	(label "UART_TX"
 		(at 224.79 44.45 0)
@@ -3457,6 +3935,16 @@
 		)
 		(uuid "6218b1f3-4518-46fd-ba80-d3a3a0c8d561")
 	)
+	(label "I2C_SDA"
+		(at 87.63 152.4 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "76331bd7-e0a2-4536-b8f1-b11acaa242a3")
+	)
 	(label "SPI_MOSI"
 		(at 224.79 39.37 0)
 		(effects
@@ -3466,6 +3954,36 @@
 			(justify left bottom)
 		)
 		(uuid "7dd4f5f0-247a-49ed-90cd-bbdfdadc2f5e")
+	)
+	(label "I2C_SCL"
+		(at 87.63 154.94 0)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e8a54ca-ecd6-4c36-8e7f-a7c1836d4ac0")
+	)
+	(label "PANEL_SENSE"
+		(at 97.79 66.04 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "b74f3edb-7b27-4877-86b7-8384af39804b")
+	)
+	(label "PANEL_IN"
+		(at 97.79 53.34 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "c8528d80-8884-4167-bdc6-79f280a0efb6")
 	)
 	(label "VOUT"
 		(at 165.1 104.14 0)
@@ -3477,6 +3995,16 @@
 		)
 		(uuid "cb325fba-272a-4ea3-8445-4c5c4d85ea88")
 	)
+	(label "VOUT"
+		(at 67.31 154.94 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "ec5c8bf7-cb0b-4113-8c7f-f27ea8eeb235")
+	)
 	(label "FB_DIV"
 		(at 153.67 91.44 90)
 		(effects
@@ -3486,6 +4014,16 @@
 			(justify left bottom)
 		)
 		(uuid "ed525fb7-47b6-4379-b232-7fa31d4fe7fd")
+	)
+	(label "LOAD_SENSE"
+		(at 67.31 157.48 180)
+		(effects
+			(font
+				(size 0.762 0.762)
+			)
+			(justify right bottom)
+		)
+		(uuid "ef72c9fe-44cb-454b-84ab-5c44c9995212")
 	)
 	(label "SPI_CS"
 		(at 224.79 57.15 0)
@@ -3652,6 +4190,88 @@
 			(project "solar-mppt-charge-controller"
 				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
 					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 82.55 64.77 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "14d6665a-c8f2-40a0-9237-234fff8b05a4")
+		(property "Reference" "R2"
+			(at 80.01 63.4999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1R"
+			(at 80.01 66.0399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 84.328 64.77 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 82.55 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8cf66189-db84-4828-b64a-1e3d04b04ef7")
+		)
+		(pin "2"
+			(uuid "c15c38aa-061d-4c4e-b190-e8638c0010ad")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -3975,6 +4595,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 77.47 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ab7f6d2-fdca-4409-a1f4-22410b9c8d56")
+		(property "Reference" "#PWR027"
+			(at 77.47 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "52961bf4-a6d8-481b-a256-7e443b4d1b5a")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x15_Odd_Even")
 		(at 217.17 57.15 0)
 		(unit 1)
@@ -4133,6 +4831,112 @@
 			(project "solar-mppt-charge-controller"
 				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
 					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Energy:INA226")
+		(at 107.95 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30bcc37a-d688-4757-a9f2-c30fd273fbc5")
+		(property "Reference" "U3"
+			(at 110.0933 45.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "INA226xA"
+			(at 110.0933 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
+			(at 128.27 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina226.pdf"
+			(at 116.84 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
+			(at 107.95 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "9"
+			(uuid "14e270bf-7b24-4a27-a2d8-cd18229abf16")
+		)
+		(pin "7"
+			(uuid "ec3bd7e3-ba62-4912-a185-9ce98819bbd6")
+		)
+		(pin "6"
+			(uuid "8cdc7b9b-5dfe-475b-97ac-e41df8e34f9d")
+		)
+		(pin "8"
+			(uuid "16234567-92b2-4fd7-b583-dc85c1b74662")
+		)
+		(pin "3"
+			(uuid "a256849a-c5ca-4c11-bf8f-294c044f5fc3")
+		)
+		(pin "4"
+			(uuid "214d4753-1831-4534-97e6-4b703c09d2b0")
+		)
+		(pin "5"
+			(uuid "3bf2be78-065d-4b82-8f09-37ddce77937f")
+		)
+		(pin "1"
+			(uuid "635d6745-3b8f-4de7-b8a2-6d02f9526d36")
+		)
+		(pin "2"
+			(uuid "070dbfe2-ee29-4241-9043-db4affe9f103")
+		)
+		(pin "10"
+			(uuid "d413327e-1b66-4b4f-a0ef-59d66d782f12")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "U3")
 					(unit 1)
 				)
 			)
@@ -4725,6 +5529,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 118.11 55.88 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "415fec09-9c99-4a4a-9fea-c585ff869b50")
+		(property "Reference" "#PWR022"
+			(at 124.46 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 55.8799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3324f2de-18af-42a9-85c2-a38b57fcd22f")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 195.58 111.76 0)
 		(unit 1)
@@ -4801,6 +5684,85 @@
 			(project "solar-mppt-charge-controller"
 				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 67.31 137.16 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "581d94eb-4483-4139-9026-74f9a0a7142d")
+		(property "Reference" "#PWR023"
+			(at 60.96 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 137.1601 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 67.31 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "54c4fa3b-ead7-40dc-823e-d1baeceb5d4d")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -4967,6 +5929,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 107.95 73.66 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62ad865d-0097-4cd0-9e89-b143c345f9a7")
+		(property "Reference" "#PWR019"
+			(at 107.95 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 107.95 78.74 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 107.95 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ae0b0623-663d-4038-b0af-3fc58dcfd677")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 227.33 81.28 180)
 		(unit 1)
@@ -5040,6 +6080,242 @@
 			(project "solar-mppt-charge-controller"
 				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 101.6 45.72 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7218f250-29ff-45c4-b666-1a9c65a8f641")
+		(property "Reference" "C5"
+			(at 101.6 38.1 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 101.6 40.64 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 44.7548 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 101.6 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "841917cf-a205-4336-b2b5-a8a0d2da39b8")
+		)
+		(pin "2"
+			(uuid "73f76f47-39a5-41a9-868b-687c56c3034b")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 107.95 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72218783-78e1-4961-b935-ac0d9c348292")
+		(property "Reference" "#PWR018"
+			(at 107.95 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 107.95 36.83 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 107.95 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a8830e79-d09b-42ae-8567-03b361e776b1")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 87.63 147.32 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7bf24cbe-70d4-4f64-a2b4-82f448324605")
+		(property "Reference" "#PWR026"
+			(at 83.82 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 91.44 147.3199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 87.63 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a58b8486-1e67-4ba6-991b-720ee25a7ea2")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -5146,6 +6422,112 @@
 		)
 	)
 	(symbol
+		(lib_id "Sensor_Energy:INA226")
+		(at 77.47 152.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82cdbf61-e234-4b60-a474-d910b5a435e9")
+		(property "Reference" "U4"
+			(at 79.6133 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "INA226xB"
+			(at 79.6133 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-10_3x3mm_P0.5mm"
+			(at 97.79 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/ina226.pdf"
+			(at 86.36 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "High-Side or Low-Side Measurement, Bi-Directional Current and Power Monitor (0-36V) with I2C Compatible Interface, TSSOP-10 (Texas DGS0010A / VSSOP)"
+			(at 77.47 152.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "78a5d108-ad36-4801-a843-855a4a637b23")
+		)
+		(pin "4"
+			(uuid "0af7076e-3e7a-484e-8689-aa60f5a8798d")
+		)
+		(pin "1"
+			(uuid "de860b8b-37e3-4066-b9c5-f436b094046f")
+		)
+		(pin "10"
+			(uuid "babea465-c0ba-4aed-9821-b6dee0a73b52")
+		)
+		(pin "6"
+			(uuid "a9ce4afa-8a47-4afd-bb9e-62e57d4a3200")
+		)
+		(pin "2"
+			(uuid "1442f548-4e39-48b4-919c-49791cb6505b")
+		)
+		(pin "8"
+			(uuid "c8bdd0dc-be1b-4766-adef-35ff437810cd")
+		)
+		(pin "7"
+			(uuid "a0b2451c-5b7f-42a1-8eb4-62fbc6499a7e")
+		)
+		(pin "5"
+			(uuid "95c078f3-2e21-4d5d-8792-1238f2d67a3f")
+		)
+		(pin "9"
+			(uuid "b62286f9-29f5-4a56-82fd-e7b0acb64602")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
 		(at 74.93 99.06 180)
 		(unit 1)
@@ -5220,6 +6602,88 @@
 			(project "solar-mppt-charge-controller"
 				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 53.34 154.94 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8f4f838f-0240-42f5-8d29-448725c07e09")
+		(property "Reference" "R3"
+			(at 50.8 153.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1R"
+			(at 50.8 156.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 55.118 154.94 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 53.34 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 53.34 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "57c22b9b-66ac-47ea-8f0b-e7f387119abb")
+		)
+		(pin "2"
+			(uuid "ade52cd9-f8b3-4dfc-b745-42fbdb3cf2f8")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5378,6 +6842,85 @@
 			(project "solar-mppt-charge-controller"
 				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 118.11 53.34 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a70e8d32-d295-4e90-9d77-53382a3fd49f")
+		(property "Reference" "#PWR021"
+			(at 124.46 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 53.3399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 118.11 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 118.11 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7bca7b33-ceb8-449b-864f-697c4a4d5a02")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5614,6 +7157,84 @@
 			(project "solar-mppt-charge-controller"
 				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 77.47 133.35 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b78aeb48-beed-454a-92c2-eb8b449e256d")
+		(property "Reference" "#PWR024"
+			(at 77.47 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 77.47 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 77.47 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b3481909-308e-4dec-a433-8843e7d4ccfd")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -5878,6 +7499,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 71.12 137.16 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d3f8aca0-486e-447a-b800-ff6223080c29")
+		(property "Reference" "C6"
+			(at 71.12 129.54 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 71.12 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 136.1948 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 71.12 137.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "83c36a26-a3ac-453f-b5fb-4ac769b4f953")
+		)
+		(pin "2"
+			(uuid "583d394e-0277-4189-99f8-f1fe7f84d424")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 254 54.61 0)
 		(unit 1)
@@ -6122,6 +7822,85 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 87.63 144.78 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2f6639d-f64b-4c0e-92c0-c71b9d394c63")
+		(property "Reference" "#PWR025"
+			(at 93.98 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 91.44 144.7799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 87.63 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2ea4fea7-90d0-4697-be8b-52dcb0f67fcd")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "#PWR025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 139.7 111.76 0)
 		(unit 1)
 		(body_style 1)
@@ -6193,6 +7972,85 @@
 			(project "solar-mppt-charge-controller"
 				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 97.79 45.72 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffa32588-2ce9-4fed-a799-11254fec430e")
+		(property "Reference" "#PWR020"
+			(at 91.44 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 93.98 45.7201 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 97.79 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 97.79 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 97.79 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b619031a-1c7f-4e91-8778-b09966d2f195")
+		)
+		(instances
+			(project "solar-mppt-charge-controller"
+				(path "/7c0b124e-1177-46fd-af84-e8447ea4b12e"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
