@@ -124,7 +124,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.0,
+        "min_clearance": 0.2,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -490,7 +490,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
+        "track_width": 1.5,
         "tuning_profile": "",
         "via_diameter": 0.6,
         "via_drill": 0.3,
@@ -632,7 +632,7 @@
         "uuid": "7c0b124e-1177-46fd-af84-e8447ea4b12e"
       }
     ],
-    "used_designators": "#FLG1-23,R1-3,L1,#PWR1-27,D1-2,C1-6,U1-4,F1,J1-4",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [

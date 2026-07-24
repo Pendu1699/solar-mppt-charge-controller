@@ -4002,6 +4002,16 @@
 		)
 		(uuid "3a367cb3-32c1-4d9e-9fa7-795b9d6fc494")
 	)
+	(label "FUSE_OUT"
+		(at 93.98 99.06 270)
+		(effects
+			(font
+				(size 0.508 0.508)
+			)
+			(justify right bottom)
+		)
+		(uuid "3a737a69-001f-4615-a909-ba56ac157bcc")
+	)
 	(label "I2C_SDA"
 		(at 118.11 60.96 0)
 		(effects
